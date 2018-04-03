@@ -1,0 +1,41 @@
+
+public class Program {
+
+	public static void main(String[] args) {
+		Circle c = new Circle();
+		System.out.println(c.getArea());
+	}
+
+}
+
+class Circle{
+	double radius;
+	
+	public Circle() {
+		radius = 1;
+	}
+	
+	public Circle(double r) {
+		radius = r;
+	}
+	
+	public double getRadius() {
+		return radius;
+	}
+	
+	public double getDiameter() {  
+		return radius * 2;
+	}
+	
+	public double getCircumference() {
+		return Math.PI * getDiameter();
+	}
+	
+	//a method to return the area of the circle.
+	public double getArea() {
+		return Math.PI * (radius * radius);
+	}
+
+	
+	
+}
